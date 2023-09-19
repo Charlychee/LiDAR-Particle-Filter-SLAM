@@ -8,12 +8,12 @@ This was implemented in Python using NumPy and Numba. The code has been redacted
 
 # Results
 ## Dataset 1
-<img src='RGB20.gif'>
+![Dataset1GIF](https://drive.google.com/file/d/1dPdwYDdGx_JG6GIxkVo4W0pBBU70F9fF/view?usp=drive_link)
 <img src='particleFilterMapTrajectory20_Complete.png'>
 <img src='textureMapTrajectory20_Complete.png'>
 
 ## Dataset 2
-<img src='RGB21.gif'>
+![Dataset2GIF](https://drive.google.com/file/d/1jBM9_sL56-YFsLD9RLXHv6s8i_cc6OiZ/view?usp=drive_link)
 <img src='particleFilterMapTrajectory21_Complete.png'>
 <img src='textureMapTrajectory21_Complete.png'>
 
@@ -86,8 +86,8 @@ Where $\text{corr}(r(\mathbf{z}, \mathbf{x}), \mathbf{m})$ is defined as the num
 
 ```math
 \begin{split}
-    \text{corr}(\mathbf{y}, \mathbf{m}) &= \sum_i \boldsymbol{1}\{y_i = m_i\}\\
-    \boldsymbol{1}\{y_i = m_i\} &= \begin{cases}
+    \text{corr}(\mathbf{y}, \mathbf{m}) &= \sum_i \mathbbm{1}\{y_i = m_i\}\\
+    \mathbbm{1}\{y_i = m_i\} &= \begin{cases}
         1, & \text{if } y_i = m_i\\
         0, & \text{else}
     \end{cases}
@@ -118,7 +118,7 @@ Let $\alpha[k]$ be the weight of each particle, representing confidence.
 ```
 ```math
 \alpha_{t+1|t+1}[k] \propto p_h(\mathbf{z}_{t+1} | \boldsymbol{\mu}_{t+1|t}[k], \mathbf{m}) \alpha_{t+1|t}[k]
-``
+```
 
 #### Estimates
 To obtain our estimate for $\mathbf{x}_t$$, we can use the particle with the largest weight:
