@@ -15,6 +15,7 @@ This was implemented in Python using NumPy and Numba. The code has been redacted
 
 ## Dataset 2
 [![Watch the video](https://img.youtube.com/vi/2y03yO7TFj4/maxresdefault.jpg)](https://www.youtube.com/watch?v=2y03yO7TFj4)
+
 <img src='particleFilterMapTrajectory21_Complete.png'>
 <img src='textureMapTrajectory21_Complete.png'>
 
@@ -87,8 +88,8 @@ Where $\text{corr}(r(\mathbf{z}, \mathbf{x}), \mathbf{m})$ is defined as the num
 
 ```math
 \begin{split}
-    \text{corr}(\mathbf{y}, \mathbf{m}) &= \sum_i \mathbbm{1}\{y_i = m_i\}\\
-    \mathbbm{1}\{y_i = m_i\} &= \begin{cases}
+    \text{corr}(\mathbf{y}, \mathbf{m}) &= \sum_i \boldsymbol{1}\{y_i = m_i\}\\
+    \boldsymbol{1}\{y_i = m_i\} &= \begin{cases}
         1, & \text{if } y_i = m_i\\
         0, & \text{else}
     \end{cases}
