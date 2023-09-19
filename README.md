@@ -26,7 +26,7 @@ This was implemented in Python using NumPy and Numba. The code has been redacted
 \mathbf{x} = \begin{pmatrix}
     x \\
     y \\
-    \theta \\
+    \theta
 \end{pmatrix} = \begin{pmatrix}
     \text{x-position} \\
     \text{y-position} \\
@@ -96,7 +96,7 @@ Where $\text{corr}(r(\mathbf{z}, \mathbf{x}), \mathbf{m})$ is defined as the num
 \end{split}
 ```
 
-Where $\mathbf{y}$ is the transformation of LiDAR scan $z$ from LiDAR frame to the world frame using $\mathbf{x}$ then transformation from world frame to occupancy grid map cell units.
+Where $\mathbf{y}$ is the transformation of LiDAR scan $\mathbf{z}$ from LiDAR frame to the world frame using $\mathbf{x}$ then transformation from world frame to occupancy grid map cell units.
 
 ### Particle Filter
 Let $N$ be the number of particles used for the Particle Filter,
@@ -123,7 +123,7 @@ Let $\alpha[k]$ be the weight of each particle, representing confidence.
 ```
 
 #### Estimates
-To obtain our estimate for $\mathbf{x}_t$$, we can use the particle with the largest weight:
+To obtain our estimate for $\mathbf{x}_t$, we can use the particle with the largest weight:
 ```math
 k^* = \max_k \alpha_{t|t}[k]
 ```
@@ -134,7 +134,7 @@ k^* = \max_k \alpha_{t|t}[k]
 #### Resampling
 Since a finite number of particles may not be enough to represent a state pdf, most particle weights will become close to zero over time. Because of this, we need to resample our particles to add more particles at locations with high weights and reduce particles at locations with low weights.
 
-Given a particle set $\{\mathbf{\mu}_{t|t}[k], \alpha_{t|t}[k]\}_{k=1}^N$, we will apply Stratified Resampling, if the effective number of particles falls below a threshold. The effective number of particles is given by
+Given a particle set $$\{\mathbf{\mu}_{t|t}[k], \alpha_{t|t}[k]\}_{k=1}^N$$, we will apply Stratified Resampling, if the effective number of particles falls below a threshold. The effective number of particles is given by
 
 ```math
 N_{eff} := \frac{1}{\sum_{k=1}^N \left(\alpha_{t|t}[k]\right)^2}
