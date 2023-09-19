@@ -8,13 +8,13 @@ This was implemented in Python using NumPy and Numba. The code has been redacted
 
 # Results
 ## Dataset 1
-[![Watch the video](https://img.youtube.com/vi/4h5Riopciw4/hqdefault.jpg)](https://www.youtube.com/watch?v=4h5Riopciw4)
+https://github.com/Charlychee/Particle-Filter-LiDAR-SLAM/assets/57028186/c9e4358e-0dfb-4044-aeef-6509b73b1e29
 
 <img src='particleFilterMapTrajectory20_Complete.png'>
 <img src='textureMapTrajectory20_Complete.png'>
 
 ## Dataset 2
-[![Watch the video](https://img.youtube.com/vi/2y03yO7TFj4/hqdefault.jpg)](https://www.youtube.com/watch?v=2y03yO7TFj4)
+https://github.com/Charlychee/Particle-Filter-LiDAR-SLAM/assets/57028186/f60182cf-6a51-48a0-9c64-1c2837a365c7
 
 <img src='particleFilterMapTrajectory21_Complete.png'>
 <img src='textureMapTrajectory21_Complete.png'>
