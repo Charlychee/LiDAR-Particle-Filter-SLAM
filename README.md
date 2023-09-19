@@ -1,4 +1,4 @@
-# Particle Filter LiDAR SLAM
+# LiDAR Particle Filter SLAM
 
 # Overview
 This project uses LiDAR observations and IMU data to estimate where our agent is and where the 2D layout of its environment is. This utilizes the Particle Filter with LiDAR and IMU data to estimate the 2D pose of an agent and create a 2D occupancy grid map.
