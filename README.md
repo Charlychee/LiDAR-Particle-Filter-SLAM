@@ -1,7 +1,7 @@
 # Particle Filter LiDAR SLAM
 
 # Overview
-This project uses IMU data and LiDAR observations to estimate where our agent is and create a 2D map of its environment. This utilizes the Particle Filter with LiDAR and IMU data to estimate the 2D pose of an agent and create a 2D occupancy grid map.
+This project utilizes the Particle Filter with LiDAR and IMU data to estimate the 2D pose of an agent and create a 2D occupancy grid map.
 
 # Implementation
 This was implemented in Python using NumPy and Numba. The code has been redacted, if you wish to see it, you may contact me at charles.lychee@gmail.com
