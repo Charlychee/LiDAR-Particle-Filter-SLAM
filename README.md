@@ -134,7 +134,11 @@ k^* = \max_k \alpha_{t|t}[k]
 #### Resampling
 Since a finite number of particles may not be enough to represent a state pdf, most particle weights will become close to zero over time. Because of this, we need to resample our particles to add more particles at locations with high weights and reduce particles at locations with low weights.
 
-Given a particle set $$\{\mathbf{\mu}_{t|t}[k], \alpha_{t|t}[k]\}_{k=1}^N$$, we will apply Stratified Resampling, if the effective number of particles falls below a threshold. The effective number of particles is given by
+Given a particle set
+```math
+\{\mathbf{\mu}_{t|t}[k], \alpha_{t|t}[k]\}_{k=1}^N
+```
+we will apply Stratified Resampling, if the effective number of particles falls below a threshold. The effective number of particles is given by
 
 ```math
 N_{eff} := \frac{1}{\sum_{k=1}^N \left(\alpha_{t|t}[k]\right)^2}
