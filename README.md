@@ -141,7 +141,7 @@ Given a particle set
 we will apply Stratified Resampling, if the effective number of particles falls below a threshold. The effective number of particles is given by
 
 ```math
-N_{eff} := \frac{1}{\sum^{N}_{k=1} {(\alpha_{t|t}[k])^2}}
+N_{eff} := 1 / \sum^{N}_{k=1} (\alpha_{t|t}[k])^2
 ``` 
 
 <img src='StratifiedResampling.jpg'>
