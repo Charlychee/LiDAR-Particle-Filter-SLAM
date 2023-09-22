@@ -106,7 +106,7 @@ Let $\boldsymbol{\mu}[k]$ be the estimated state $\mathbf{x}$ probability distri
 Let $\alpha[k]$ be the weight of each particle, representing confidence.
 
 
-#### Predict
+#### Predict Step
 ```math
 \boldsymbol{\mu}_{t+1|t}[k] = f(\boldsymbol{\mu}_{t|t}[k], \mathbf{u}_t + \boldsymbol{\epsilon}_t)
 ```
@@ -114,7 +114,7 @@ Let $\alpha[k]$ be the weight of each particle, representing confidence.
 \alpha_{t+1|t}[k] = \alpha_{t|t}[k]
 ```
 
-#### Update
+#### Update Step
 ```math
 \boldsymbol{\mu}_{t+1|t+1}[k] = \boldsymbol{\mu}_{t+1|t}[k]
 ```
